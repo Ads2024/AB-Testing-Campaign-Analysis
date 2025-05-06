@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/AB-Testing-Campaign-Analysis/static/css/main.6f989e60.css",
+    "main.js": "/AB-Testing-Campaign-Analysis/static/js/main.413938e1.js",
+    "index.html": "/AB-Testing-Campaign-Analysis/index.html",
+    "main.6f989e60.css.map": "/AB-Testing-Campaign-Analysis/static/css/main.6f989e60.css.map",
+    "main.413938e1.js.map": "/AB-Testing-Campaign-Analysis/static/js/main.413938e1.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6f989e60.css",
+    "static/js/main.413938e1.js"
+  ]
+}
