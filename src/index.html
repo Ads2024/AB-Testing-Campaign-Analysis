@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campaign A/B Testing Analysis</title>
+    <link href="./index.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 min-h-screen">
+    <div class="container mx-auto px-4 py-8">
+        <header class="text-center mb-12">
+            <h1 class="text-4xl font-bold text-gray-800 mb-4">Campaign A/B Testing Analysis</h1>
+            <p class="text-gray-600">Comparing Control vs Test Campaign Performance</p>
+        </header>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <!-- Key Metrics Section -->
+            <div class="bg-white rounded-lg shadow-lg p-6">
+                <h2 class="text-2xl font-semibold text-gray-800 mb-4">Key Metrics</h2>
+                <div id="keyMetrics" class="space-y-4"></div>
+            </div>
+
+            <!-- Statistical Analysis Section -->
+            <div class="bg-white rounded-lg shadow-lg p-6">
+                <h2 class="text-2xl font-semibold text-gray-800 mb-4">Statistical Analysis</h2>
+                <div id="statisticalAnalysis" class="space-y-4"></div>
+            </div>
+
+            <!-- Performance Charts -->
+            <div class="bg-white rounded-lg shadow-lg p-6 md:col-span-2">
+                <h2 class="text-2xl font-semibold text-gray-800 mb-4">Campaign Performance</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                        <canvas id="spendChart"></canvas>
+                    </div>
+                    <div>
+                        <canvas id="conversionChart"></canvas>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Detailed Metrics -->
+            <div class="bg-white rounded-lg shadow-lg p-6 md:col-span-2">
+                <h2 class="text-2xl font-semibold text-gray-800 mb-4">Detailed Metrics</h2>
+                <div class="overflow-x-auto">
+                    <table class="min-w-full table-auto">
+                        <thead>
+                            <tr class="bg-gray-50">
+                                <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Metric</th>
+                                <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Control</th>
+                                <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Test</th>
+                                <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Difference</th>
+                            </tr>
+                        </thead>
+                        <tbody id="metricsTable" class="bg-white divide-y divide-gray-200">
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="./index.js"></script>
+</body>
+</html> 

@@ -1,4 +1,4 @@
-const controlGroup =`Campaign Name;Date;Spend [USD];# of Impressions;Reach;# of Website Clicks;# of Searches;# of View Content;# of Add to Cart;# of Purchase
+export const controlGroupData = `Campaign Name;Date;Spend [USD];# of Impressions;Reach;# of Website Clicks;# of Searches;# of View Content;# of Add to Cart;# of Purchase
 Control Campaign;1.08.2019;2280;82702;56930;7016;2290;2159;1819;618
 Control Campaign;2.08.2019;1757;121040;102513;8110;2033;1841;1219;511
 Control Campaign;3.08.2019;2343;131711;110862;6508;1737;1549;1134;372
@@ -30,7 +30,7 @@ Control Campaign;28.08.2019;2421;141654;125874;6287;1672;1589;1711;643
 Control Campaign;29.08.2019;2375;92029;74192;8127;4891;4219;1486;334
 Control Campaign;30.08.2019;2324;111306;88632;4658;1615;1249;442;670`;
 
-const testGroupData =`Campaign Name;Date;Spend [USD];# of Impressions;Reach;# of Website Clicks;# of Searches;# of View Content;# of Add to Cart;# of Purchase
+export const testGroupData = `Campaign Name;Date;Spend [USD];# of Impressions;Reach;# of Website Clicks;# of Searches;# of View Content;# of Add to Cart;# of Purchase
 Test Campaign;1.08.2019;3008;39550;35820;3038;1946;1069;894;255
 Test Campaign;2.08.2019;2542;100719;91236;4657;2359;1548;879;677
 Test Campaign;3.08.2019;2365;70263;45198;7885;2572;2367;1268;578
@@ -62,7 +62,7 @@ Test Campaign;28.08.2019;2247;54627;41267;8144;2432;1281;1009;721
 Test Campaign;29.08.2019;2805;67444;43219;7651;1920;1240;1168;677
 Test Campaign;30.08.2019;1977;120203;89380;4399;2978;1625;1034;572`;
 
-const controlGroupRows = controlGroup.split("\n");
+const controlGroupRows = controlGroupData.split("\n");
 const testGroupRows = testGroupData.split("\n");
 
 export { controlGroupRows, testGroupRows };
